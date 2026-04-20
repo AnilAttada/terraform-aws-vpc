@@ -2,7 +2,7 @@
 This module is used by joindevops company. Projects inside joindevops follow this module to create vpc.
 
 ## Inputs
-* cidr_block(Optional) - User can provide their cidr_block. Default is "10.0.0.0/16
+* cidr_block(Optional) - User can provide their cidr_block. Default is "10.0.0.0/16"
 
 * project(Required) - User should specify their project name.
 
