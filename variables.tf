@@ -56,3 +56,11 @@ variable "database_route_table_tags" {
   type = map(string)
   default = {}
 }
+
+variable "is_peering_required" {
+  default = false
+}
+variable "vpc_peering_tags" {
+  type = map(string)
+  default = {}
+}

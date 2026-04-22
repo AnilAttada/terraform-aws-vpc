@@ -24,6 +24,7 @@ resource "aws_internet_gateway" "igw" {
   )
 }
 
+#roboshop-dev-public-us-east-1a
 resource "aws_subnet" "public" {
   count = length(var.public_subnet_cidr_block)
   vpc_id = aws_vpc.main.id
@@ -94,7 +95,7 @@ resource "aws_nat_gateway" "main" {
   )
 
   # To ensure proper ordering, it is recommended to add an explicit dependency
-  # on the Internet Gateway for the VPC. #NAT GATEWAY depends on IGW to grt internet.
+  # on the Internet Gateway for the VPC. #NAT GATEWAY depends on IGW to get internet.
   depends_on = [aws_internet_gateway.igw]
 }
 
