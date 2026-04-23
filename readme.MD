@@ -9,3 +9,6 @@ This module is used by joindevops company. Projects inside joindevops follow thi
 * environment(Required) - User should specify the environment they are using for.
 
 * igw_tags(Optional) - User can provide the igw tags, If they needed.
+
+## Outputs
+* vpc_id - Provides the ID of vpc created using this module.
